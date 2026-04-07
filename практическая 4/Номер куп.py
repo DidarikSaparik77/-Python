@@ -1,5 +1,5 @@
-name = int(input())
-print((name + 3) // 4)
+numer_kupe = int(input('Введите номер вашего купе'))
+print((numer_kupe + 3) // 4)
 
 
 
