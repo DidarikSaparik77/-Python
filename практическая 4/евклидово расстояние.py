@@ -1,7 +1,7 @@
 x1, y1, x2, y2 = float(input()), float(input()), float(input()), float(input())
 from math import *
-p = sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))
-print(p)
+evklidovo_rastoyanie = sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2))
+print(evklidovo_rastoyanie)
 
 
 
