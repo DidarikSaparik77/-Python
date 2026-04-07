@@ -1,8 +1,8 @@
-name1 = int(input())
-name2 = int(input())
+rebyatki = int(input())
+mandarinchiki = int(input())
 
-print(name2 // name1)
-print(name2 % name1)
+print(mandarinchiki // rebyatki)
+print(mandarinchiki % rebyatki)
 
 
 
