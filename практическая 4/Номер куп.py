@@ -1,5 +1,5 @@
 numer_kupe = int(input('Введите номер вашего места'))
-print((numer_kupe + 3) // 4)
+print(('Ваше место:', numer_kupe, 'в' (numer_kupe + 3) // 4), 'купе')
 
 
 
