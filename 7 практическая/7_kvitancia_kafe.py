@@ -1,0 +1,101 @@
+print('-' * 50)
+print('🧁 КВИТАНЦИЯ КАФЕ 🧁')
+print('-' * 50)
+
+napitok = int(input('Укажите напиток в виде числа (кофе - 1,  чай - 2, сок - 3, вода - 4, лимонад -5): '))
+kolvo_napinkov = int(input('Введите количество напитков: '))
+promokod = input('Введите промокод, если у вас его нет, то напишите "нет": ')
+
+match napitok:
+    case 1:
+        if promokod == 'РОНАЛДУ':
+            print(f'Товар: Кофе ☕')
+            print(f'Цена за позицию: 120 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 120} руб')
+            print(f'Скидка "РОНАЛДУ" (50 %): -{kolvo_napinkov * 120 / 2} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 120 / 2) + ' руб':^50}')
+            print('-' * 50)
+        else:
+            print(f'Товар: Кофе ☕')
+            print(f'Цена за позицию: 120 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 120} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 120) + ' руб':^50}')
+            print('-' * 50)
+    case 2:
+        if promokod == 'РОНАЛДУ':
+            print(f'Товар: Чай 🍵')
+            print(f'Цена за позицию: 80 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 80} руб')
+            print(f'Скидка "РОНАЛДУ" (50 %): -{kolvo_napinkov * 80 / 2} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 80 / 2) + ' руб':^50}')
+            print('-' * 50)
+        else:
+            print(f'Товар: Чай 🍵')
+            print(f'Цена за позицию: 80 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 80} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 80) + ' руб':^50}')
+            print('-' * 50)
+    case 3:
+        if promokod == 'РОНАЛДУ':
+            print(f'Товар: Сок 🧃')
+            print(f'Цена за позицию: 100 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 100} руб')
+            print(f'Скидка "РОНАЛДУ" (50 %): -{kolvo_napinkov * 100 / 2} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 100 / 2) + ' руб':^50}')
+            print('-' * 50)
+        else:
+            print(f'Товар: Сок 🧃')
+            print(f'Цена за позицию: 100 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 100} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 100) + ' руб':^50}')
+            print('-' * 50)
+    case 4:
+        if promokod == 'РОНАЛДУ':
+            print(f'Товар: Вода 💧')
+            print(f'Цена за позицию: 50 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 50} руб')
+            print(f'Скидка "РОНАЛДУ" (50 %): -{kolvo_napinkov * 50 / 2} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 50 / 2) + ' руб':^50}')
+            print('-' * 50)
+        else:
+            print(f'Товар: Вода 💧')
+            print(f'Цена за позицию: 50 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 50} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 50) + ' руб':^50}')
+            print('-' * 50)
+    case 5:
+        if promokod == 'РОНАЛДУ':
+            print(f'Товар: Лимонад 🥤')
+            print(f'Цена за позицию: 90 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 90} руб')
+            print(f'Скидка "РОНАЛДУ" (50 %): -{kolvo_napinkov * 90 / 2} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 90 / 2) + ' руб':^50}')
+            print('-' * 50)
+        else:
+            print(f'Товар: Лимонад 🥤')
+            print(f'Цена за позицию: 90 рублей')
+            print(f'Количество: {kolvo_napinkov} порции')
+            print(f'Сумма: {kolvo_napinkov * 90} руб')
+            print('-' * 50)
+            print(f'{'К оплате  ' + str(kolvo_napinkov * 90) + ' руб':^50}')
+            print('-' * 50)
+    case _:
+        print('Ошибка! Введите напиток от 1 до 5, затем кол-во напитком числом и наконец промокод словом')
