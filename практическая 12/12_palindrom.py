@@ -1,0 +1,1 @@
+print('Палиндром' if list(word := input('Введите слово: ')) == list(word[::-1]) else 'Не Палиндром')
